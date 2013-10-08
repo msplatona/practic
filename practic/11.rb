@@ -1,10 +1,11 @@
 def hello_world(family_name="", first_name="")
-	puts "Hello, world"
+	greeting = "Hello, world\n"
 	if family_name != "" && first_name != ""
-		puts "My name is " + first_name + " " + family_name
+	greeting += "My name is " + first_name + " " + family_name
 	end
+	return greeting #можно опустить return и будет работать 
 end
 
-hello_world
-hello_world("Bond", "James")
-hello_world("Bond", "Jane")
+puts 						hello_world("Snitko", "Roman")
+#send_via_email hello_world
+#send_over_http	hello_world
